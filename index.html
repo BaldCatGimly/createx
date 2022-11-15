@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Верстка «createx»</title>
+</head>
+
+<body>
+	<div class="bg-test">
+		<p class="bg-test__content">new project done</p>
+	</div>
+	<div class="rootpage">
+		<h1>Верстка «createx»</h1>
+		<div class="rootpage__info">Особенности проекта</div>
+		<p class="rootpage__info-descr">
+			Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+			cillum sint consectetur cupidatat.
+		</p>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+		</ol>
+		<div class="rootpage__cta-block">
+			<div class="rootpage__item-box box-tnx">
+				<div class="rootpage__tnx">
+					<h2>Спасибо за заказ!</h2>
+					<p>Буду рад хорошему отзыву.</p>
+					<p>Обращайтесь еще!</p>
+				</div>
+			</div>
+			<div class="rootpage__item-box box-conts">
+				<div class="rootpage__contacts">
+					<h2>Мои контакты:</h2>
+					<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+					<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
+					<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #2a313c;
+		background-color: #222831;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 0 200px 40px 200px;
+		display: flex;
+		flex-direction: column;
+		max-height: 100vh;
+	}
+
+	h1 {
+		color: #f26969;
+		font-weight: 600;
+		font-size: 52px;
+		line-height: 87px;
+		margin: 0px 0px 40px 0px;
+	}
+
+	h2 {
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 55px;
+		color: #f5f5f5;
+		margin: 0px 0px 20px 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 44px;
+		color: #a1b8ce;
+		margin: 0px 0px 70px 0px;
+	}
+
+	.rootpage__list {
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 44px;
+		color: #f5f5f5;
+		margin: 0px 0px 60px 2.19rem;
+	}
+
+	.rootpage__list a {
+		font-weight: 600;
+		font-size: 26px;
+		line-height: 44px;
+		color: #a1b8ce;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__cta-block {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 30px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		position: absolute;
+		top: 12px;
+		left: -12px;
+		width: 100%;
+		height: 300px;
+		max-width: 515px;
+		font-weight: 400;
+		border-radius: 10px;
+		font-size: 24px;
+		line-height: 50px;
+		padding: 35px 15px 35px 35px;
+	}
+
+	.rootpage__contacts h2,
+	.rootpage__tnx h2 {
+		color: #2a313c;
+		font-size: 32px;
+		line-height: 45px;
+	}
+
+	.rootpage__contacts {
+		background: #a1b8ce;
+	}
+
+	.rootpage__contacts a {
+		color: #2a313c;
+	}
+
+	/* .rootpage__item-box.box-tnx { */
+	/*   border: 5px solid #a1b8ce73; */
+	/*   position: relative; */
+	/*   z-index: 2; */
+	/* } */
+
+	.rootpage__item-box.box-conts {
+		border: 5px solid #f26969a3;
+	}
+
+	.rootpage__tnx {
+		position: relative;
+		background: #f26969;
+	}
+
+	.rootpage__item-box {
+		position: relative;
+		border: 5px solid #a1b8ce;
+		border-radius: 10px;
+		flex-basis: 515px;
+		position: relative;
+		background-color: transparent;
+		border-radius: 10px;
+	}
+
+	.bg-test {
+		margin: 0 auto;
+	}
+
+	.bg-test__content {
+		font-weight: 600;
+		font-size: 150px;
+		line-height: 205px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	@media (max-width: 1300px) {
+		.bg-test__content {
+			font-size: 100px;
+			line-height: 130px;
+		}
+
+		.rootpage {
+			padding: 0px 150px;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.rootpage__cta-block {
+			flex-direction: column;
+			width: 515px;
+			height: 650px;
+			margin-bottom: 100px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.bg-test__content {
+			font-size: 60px;
+			line-height: 70px;
+		}
+
+		.rootpage {
+			padding: 0px 50px;
+		}
+
+		h2 {
+			font-size: 45px;
+		}
+	}
+</style>
+
+</html>
